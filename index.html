@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Dasari Naga Sai Niharika - Aspiring Software Engineer, Quantum Computing Enthusiast, and Automation Developer. Discover projects in Quantum Machine Learning, RPA, and cloud development.">
+  <title>Naga Sai Niharika | Quantum Technology Portfolio</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scanlines & Grid Effects for CRT/Hologram Aesthetic -->
+  <div class="scanlines"></div>
+  <div class="dashboard-grid"></div>
+  
+  <!-- Quantum Entanglement Particles Canvas -->
+  <div id="quantum-canvas-container">
+    <canvas id="quantum-canvas"></canvas>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollBar"></div>
+  </div>
+
+  <!-- --- HIGH-TECH NAV BAR --- -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-cyber fixed-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-cyber" href="#hero">
+        <span class="text-neon-cyan">N.S.</span> NIHARIKA
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">// ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">// SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">// EXPERIENCE</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">// PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">// ARCHIVES</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">// TRANSMIT</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <div class="status-indicator">
+              <span class="status-dot"></span>
+              <span class="text-neon-cyan">SYS: ONLINE</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- --- HERO SECTION --- -->
+  <section id="hero" class="hero-section">
+    <div class="glow-orb glow-orb-cyan"></div>
+    <div class="glow-orb glow-orb-purple"></div>
+    
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7 text-start">
+          <div class="glass-panel hero-dashboard p-4 p-md-5 reveal-on-scroll active">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div>
+            <div class="hud-corner hud-br"></div>
+            
+            <p class="dashboard-mono mb-2">// INTRODUCING SYSTEM CORE</p>
+            <h1 class="hero-title">Engineering Intelligent Solutions for Tomorrow</h1>
+            <h3 class="h5 mb-4 text-neon-purple" style="font-family: var(--font-orbitron);">
+              Dasari Naga Sai Niharika
+            </h3>
+            
+            <!-- Typewriter Target -->
+            <div class="mb-4 d-flex align-items-center" style="min-height: 40px;">
+              <span class="dashboard-mono me-2">></span>
+              <span id="typewriter-text" class="text-neon-cyan" style="font-family: var(--font-mono); font-size: 1.25rem;"></span>
+            </div>
+
+            <p class="text-secondary mb-5">
+              Passionate Computer Science Engineering student focused on developing innovative software solutions through Quantum Computing, Automation Technologies, Cloud Platforms, and Modern Engineering Practices.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#projects" class="btn btn-cyber btn-cyber-primary">Explore Projects</a>
+              <a href="Resume.pdf" class="btn btn-cyber btn-cyber-secondary" target="_blank">Download Resume</a>
+              <a href="#contact" class="btn btn-cyber btn-cyber-primary" style="border-color: var(--accent-purple); color: var(--accent-purple);">Contact Me</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-5 text-center">
+          <div class="reveal-on-scroll active">
+            <div class="glass-panel p-4 text-start position-relative overflow-hidden" style="border-color: var(--glass-border-purple); background: rgba(8, 17, 32, 0.85);">
+              <div class="hud-corner hud-tl purple"></div>
+              <div class="hud-corner hud-tr purple"></div>
+              <div class="hud-corner hud-bl purple"></div>
+              <div class="hud-corner hud-br purple"></div>
+              <h4 class="dashboard-mono text-neon-purple mb-4" style="font-size: 0.9rem;">// QUANTUM_CORE_TELEMETRY</h4>
+              <div class="text-center py-2 mb-3">
+                <svg viewBox="0 0 200 200" style="width: 200px; height: 200px;">
+                  <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(0, 245, 255, 0.08)" stroke-width="1.5" />
+                  <circle cx="100" cy="100" r="70" fill="none" stroke="rgba(139, 92, 246, 0.15)" stroke-width="1" stroke-dasharray="5 3" />
+                  <circle cx="100" cy="100" r="50" fill="none" stroke="rgba(0, 245, 255, 0.25)" stroke-width="2" />
+                  <!-- Rotating rings -->
+                  <g class="rotating-ring" style="transform-origin: 100px 100px;">
+                    <line x1="100" y1="10" x2="100" y2="190" stroke="rgba(0, 245, 255, 0.2)" stroke-width="1" />
+                    <line x1="10" y1="100" x2="190" y2="100" stroke="rgba(0, 245, 255, 0.2)" stroke-width="1" />
+                    <circle cx="100" cy="10" r="4.5" fill="var(--accent-cyan)" />
+                    <circle cx="100" cy="190" r="4.5" fill="var(--accent-cyan)" />
+                    <circle cx="10" cy="100" r="4.5" fill="var(--accent-purple)" />
+                    <circle cx="190" cy="100" r="4.5" fill="var(--accent-purple)" />
+                  </g>
+                  <g class="rotating-ring-reverse" style="transform-origin: 100px 100px;">
+                    <circle cx="100" cy="100" r="30" fill="none" stroke="rgba(236, 72, 153, 0.3)" stroke-width="1.5" stroke-dasharray="3 6" />
+                    <circle cx="50" cy="50" r="5" fill="var(--accent-pink)" />
+                    <circle cx="150" cy="150" r="5" fill="var(--accent-pink)" />
+                  </g>
+                  <text x="100" y="105" fill="var(--accent-cyan)" font-family="var(--font-mono)" font-size="14" text-anchor="middle" font-weight="bold" style="text-shadow: 0 0 5px var(--accent-cyan);">Q-STATE</text>
+                </svg>
+              </div>
+              <div class="mt-2 dashboard-mono text-secondary" style="font-size: 0.8rem; line-height: 1.8;">
+                <div><span class="text-neon-cyan">> CODESPACE:</span> ACTIVE_BRANCH</div>
+                <div><span class="text-neon-purple">> SYS_LATENCY:</span> 1.02ms</div>
+                <div><span class="text-neon-cyan">> PARAMETERS:</span> CGPA_9.20</div>
+                <div><span class="text-neon-purple">> COORDS:</span> 16.5062° N, 80.6480° E</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- ABOUT / PROFILE SECTION --- -->
+  <section id="about" class="py-5 my-5">
+    <div class="container">
+      <div class="section-title-wrapper text-start reveal-on-scroll">
+        <span class="section-title-bg">Identity</span>
+        <h2 class="section-title text-neon-cyan">Engineer Profile</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Bio Card -->
+        <div class="col-lg-6 reveal-on-scroll">
+          <div class="glass-panel p-4 h-100">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-tr"></div>
+            <div class="hud-corner hud-bl"></div>
+            <div class="hud-corner hud-br"></div>
+            
+            <h3 class="h4 mb-4 text-neon-cyan">// TELEMETRY DETAILS</h3>
+            <p class="text-secondary mb-4">
+              I am a Computer Science and Engineering student with a deep fascination for quantum systems, robotic process automation, and robust software architectures. With a strong academic foundation (CGPA 9.20), I actively bridge the gap between classical engineering paradigms and emerging technologies like Quantum Computing and Cloud Platforms.
+            </p>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <ul class="timeline-highlights p-0 m-0">
+                  <li>B.Tech CSE Student</li>
+                  <li>CGPA: 9.20</li>
+                  <li>Automation Developer</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="timeline-highlights p-0 m-0">
+                  <li>Quantum QML Hobbyist</li>
+                  <li>UiPath RPA Enthusiast</li>
+                  <li>Full Stack Architect</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Telemetry Parameters Matrix -->
+        <div class="col-lg-6 reveal-on-scroll">
+          <div class="row g-4 h-100">
+            <!-- Parameter 1 -->
+            <div class="col-sm-6">
+              <div class="glass-panel purple-border param-box text-center">
+                <div class="hud-corner hud-tl purple"></div>
+                <div class="hud-corner hud-br purple"></div>
+                <span class="counter-value d-block mb-2" data-target="9.20" data-decimals="2">0.00</span>
+                <span class="counter-label">Academic CGPA</span>
+              </div>
+            </div>
+            <!-- Parameter 2 -->
+            <div class="col-sm-6">
+              <div class="glass-panel param-box text-center">
+                <div class="hud-corner hud-tl"></div>
+                <div class="hud-corner hud-br"></div>
+                <span class="counter-value d-block mb-2" data-target="5">0</span>
+                <span class="counter-label">Hackathon Rank</span>
+              </div>
+            </div>
+            <!-- Parameter 3 -->
+            <div class="col-sm-6">
+              <div class="glass-panel param-box text-center">
+                <div class="hud-corner hud-tl"></div>
+                <div class="hud-corner hud-br"></div>
+                <span class="counter-value d-block mb-2" data-target="200">0</span>
+                <span class="counter-label">Coding Problems</span>
+              </div>
+            </div>
+            <!-- Parameter 4 -->
+            <div class="col-sm-6">
+              <div class="glass-panel purple-border param-box text-center">
+                <div class="hud-corner hud-tl purple"></div>
+                <div class="hud-corner hud-br purple"></div>
+                <span class="counter-value d-block mb-2" data-target="3">0</span>
+                <span class="counter-label">Major Projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- SKILLS MATRIX SECTION --- -->
+  <section id="skills" class="py-5 my-5">
+    <div class="container">
+      <div class="section-title-wrapper text-start reveal-on-scroll">
+        <span class="section-title-bg">Matrix</span>
+        <h2 class="section-title text-neon-purple">Skill Matrix</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- SVG Gradient Definition -->
+        <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+          <linearGradient id="cyan-purple-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="var(--accent-cyan)" />
+            <stop offset="100%" stop-color="var(--accent-purple)" />
+          </linearGradient>
+        </svg>
+
+        <!-- Skill Node: Languages -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="glass-panel skill-matrix-card p-4">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-br"></div>
+            <h3 class="h5 mb-4 text-neon-cyan">// PROGRAMMING LANGUAGES</h3>
+            
+            <div class="row text-center mb-3">
+              <div class="col-6 mb-3">
+                <div class="skill-circle-container">
+                  <svg>
+                    <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+                    <circle class="skill-circle-progress" cx="50" cy="50" r="45" data-progress="90" />
+                  </svg>
+                  <span class="skill-circle-text">90%</span>
+                </div>
+                <span class="dashboard-mono d-block" style="font-size: 0.85rem;">JAVA</span>
+              </div>
+              <div class="col-6 mb-3">
+                <div class="skill-circle-container">
+                  <svg>
+                    <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+                    <circle class="skill-circle-progress" cx="50" cy="50" r="45" data-progress="85" />
+                  </svg>
+                  <span class="skill-circle-text">85%</span>
+                </div>
+                <span class="dashboard-mono d-block" style="font-size: 0.85rem;">PYTHON</span>
+              </div>
+            </div>
+            
+            <div class="d-flex flex-wrap gap-1 justify-content-center">
+              <span class="skill-badge">C</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">HTML/CSS</span>
+              <span class="skill-badge">Flutter</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Node: Core Concepts -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="glass-panel skill-matrix-card purple-border p-4">
+            <div class="hud-corner hud-tl purple"></div>
+            <div class="hud-corner hud-br purple"></div>
+            <h3 class="h5 mb-4 text-neon-purple">// CORE CONCEPTS</h3>
+            
+            <div class="row text-center mb-3">
+              <div class="col-6 mb-3">
+                <div class="skill-circle-container">
+                  <svg>
+                    <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+                    <circle class="skill-circle-progress" cx="50" cy="50" r="45" data-progress="80" />
+                  </svg>
+                  <span class="skill-circle-text">80%</span>
+                </div>
+                <span class="dashboard-mono d-block text-neon-purple" style="font-size: 0.85rem;">DSA</span>
+              </div>
+              <div class="col-6 mb-3">
+                <div class="skill-circle-container">
+                  <svg>
+                    <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+                    <circle class="skill-circle-progress" cx="50" cy="50" r="45" data-progress="75" />
+                  </svg>
+                  <span class="skill-circle-text">75%</span>
+                </div>
+                <span class="dashboard-mono d-block text-neon-purple" style="font-size: 0.85rem;">QUANTUM CO.</span>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-1 justify-content-center">
+              <span class="skill-badge">Algorithms</span>
+              <span class="skill-badge">OOP</span>
+              <span class="skill-badge">SDLC</span>
+              <span class="skill-badge">Cloud Computing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Node: Tools & RPA -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll mx-md-auto">
+          <div class="glass-panel skill-matrix-card p-4">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-br"></div>
+            <h3 class="h5 mb-4 text-neon-cyan">// AUTOMATION & TOOLS</h3>
+            
+            <div class="row text-center mb-3">
+              <div class="col-6 mb-3">
+                <div class="skill-circle-container">
+                  <svg>
+                    <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+                    <circle class="skill-circle-progress" cx="50" cy="50" r="45" data-progress="85" />
+                  </svg>
+                  <span class="skill-circle-text">85%</span>
+                </div>
+                <span class="dashboard-mono d-block" style="font-size: 0.85rem;">UIPATH</span>
+              </div>
+              <div class="col-6 mb-3">
+                <div class="skill-circle-container">
+                  <svg>
+                    <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+                    <circle class="skill-circle-progress" cx="50" cy="50" r="45" data-progress="80" />
+                  </svg>
+                  <span class="skill-circle-text">80%</span>
+                </div>
+                <span class="dashboard-mono d-block" style="font-size: 0.85rem;">GIT / GITHUB</span>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-1 justify-content-center">
+              <span class="skill-badge">Workflow Automation</span>
+              <span class="skill-badge">RPA Dev</span>
+              <span class="skill-badge">VS Code</span>
+              <span class="skill-badge">Eclipse</span>
+              <span class="skill-badge">SQLite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- INTERNSHIP SECTION --- -->
+  <section id="experience" class="py-5 my-5">
+    <div class="container">
+      <div class="section-title-wrapper text-start reveal-on-scroll">
+        <span class="section-title-bg">Chronology</span>
+        <h2 class="section-title text-neon-cyan">Experience Timeline</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-9 reveal-on-scroll">
+          <div class="glass-panel p-4 p-md-5">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-br"></div>
+            
+            <div class="timeline-cyber">
+              <!-- Item 1 -->
+              <div class="timeline-item-cyber">
+                <div class="timeline-node"></div>
+                <div class="timeline-header">
+                  <span class="timeline-date">// JUN 2024 - JUL 2024</span>
+                  <h3 class="timeline-role">UiPath Automation Developer Associate</h3>
+                  <span class="timeline-company"><i class="bi bi-robot me-1"></i> EduSkills Internship</span>
+                </div>
+                <ul class="timeline-highlights">
+                  <li>Developed advanced robotic automation workflows to handle complex business data inputs.</li>
+                  <li>Automated repetitive high-volume business processes, optimizing digital operations.</li>
+                  <li>Built task orchestration and scheduling workflows using UiPath Studio.</li>
+                  <li>Successfully reduced manual efforts by approximately 30–40% for targeted workflow tasks.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- PROJECTS SECTION --- -->
+  <section id="projects" class="py-5 my-5">
+    <div class="container">
+      <div class="section-title-wrapper text-start reveal-on-scroll">
+        <span class="section-title-bg">Showcase</span>
+        <h2 class="section-title text-neon-purple">Quantum & Dev Projects</h2>
+      </div>
+
+      <!-- Category Filter Control panel -->
+      <div class="glass-panel p-3 mb-5 text-center reveal-on-scroll">
+        <div class="hud-corner hud-tl"></div>
+        <div class="hud-corner hud-br"></div>
+        <div class="d-flex flex-wrap justify-content-center">
+          <button class="project-filter-btn active" data-filter="all">ALL_SYSTEMS</button>
+          <button class="project-filter-btn" data-filter="quantum">QUANTUM</button>
+          <button class="project-filter-btn" data-filter="ai">AI</button>
+          <button class="project-filter-btn" data-filter="automation">AUTOMATION</button>
+          <button class="project-filter-btn" data-filter="education">EDUCATION</button>
+        </div>
+      </div>
+
+      <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center" id="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="col project-col" data-categories="quantum ai">
+          <div class="glass-panel project-card">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-br"></div>
+            
+            <div class="project-card-image-wrapper">
+              <span class="project-card-overlay">QUANTUM AI</span>
+              <!-- Canvas or SVG abstract placeholder to maintain sleek futuristic look without missing images -->
+              <svg viewBox="0 0 400 200" style="background:#040914; width:100%; height:100%;">
+                <defs>
+                  <radialGradient id="cardGrad1" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="rgba(0, 245, 255, 0.25)" />
+                    <stop offset="100%" stop-color="rgba(0, 0, 0, 0)" />
+                  </radialGradient>
+                </defs>
+                <circle cx="200" cy="100" r="80" fill="url(#cardGrad1)" />
+                <path d="M120 100 Q 200 40, 280 100 T 360 100" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none" opacity="0.6" />
+                <path d="M120 100 Q 200 160, 280 100 T 360 100" stroke="var(--accent-purple)" stroke-width="1.5" fill="none" opacity="0.6" />
+                <circle cx="200" cy="100" r="4" fill="var(--accent-cyan)" />
+                <circle cx="160" cy="70" r="3" fill="var(--accent-purple)" />
+                <circle cx="240" cy="130" r="3" fill="var(--accent-pink)" />
+                <line x1="160" y1="70" x2="200" y2="100" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+                <line x1="240" y1="130" x2="200" y2="100" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+                <text x="20" y="30" fill="var(--accent-cyan)" font-family="monospace" font-size="10">QML_COMPILER_V1.02</text>
+              </svg>
+            </div>
+            
+            <div class="project-card-body">
+              <h3 class="project-card-title">Enhanced Fraud Detection System</h3>
+              <p class="text-secondary small flex-grow-1">
+                Developed as Team Lead for the Amaravati Quantum Valley Hackathon 2025. Ranked Top 5 out of 68 teams. Integrates Qiskit with Classical Machine Learning to identify complex transaction fraud patterns.
+              </p>
+              <ul class="timeline-highlights p-0 my-3 text-secondary small">
+                <li>Hybrid QML + Classical AI</li>
+                <li>Real-time Fraud Dashboard</li>
+              </ul>
+              <div class="project-tech-badges">
+                <span class="project-tech-tag">Qiskit</span>
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Streamlit</span>
+                <span class="project-tech-tag">AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col project-col" data-categories="quantum">
+          <div class="glass-panel project-card purple-border">
+            <div class="hud-corner hud-tl purple"></div>
+            <div class="hud-corner hud-br purple"></div>
+            
+            <div class="project-card-image-wrapper">
+              <span class="project-card-overlay" style="border-color: var(--accent-purple); color: var(--accent-purple);">OPTIMIZATION</span>
+              <svg viewBox="0 0 400 200" style="background:#040914; width:100%; height:100%;">
+                <defs>
+                  <radialGradient id="cardGrad2" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="rgba(139, 92, 246, 0.25)" />
+                    <stop offset="100%" stop-color="rgba(0, 0, 0, 0)" />
+                  </radialGradient>
+                </defs>
+                <rect x="50" y="50" width="300" height="100" fill="url(#cardGrad2)" rx="5" />
+                <path d="M80 150 L 150 90 L 220 110 L 320 50" stroke="var(--accent-purple)" stroke-width="2" fill="none" />
+                <path d="M80 150 L 150 110 L 220 130 L 320 80" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-dasharray="4" fill="none" />
+                <circle cx="320" cy="50" r="5" fill="var(--accent-pink)" />
+                <text x="20" y="30" fill="var(--accent-purple)" font-family="monospace" font-size="10">FLIGHT_TRAJECTORY_SIM</text>
+              </svg>
+            </div>
+            
+            <div class="project-card-body">
+              <h3 class="project-card-title">Aircraft Climb Trajectory Optimization</h3>
+              <p class="text-secondary small flex-grow-1">
+                A scientific computing system designed to optimize aircraft ascent flight profiles. Leverages quantum annealing and parameter optimization routines to maximize fuel efficiency while mitigating adverse wind vector profiles.
+              </p>
+              <ul class="timeline-highlights p-0 my-3 text-secondary small">
+                <li>Weather-Aware Trajectory Calculations</li>
+                <li>Fuel Optimization Algorithms</li>
+              </ul>
+              <div class="project-tech-badges">
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Quantum Computing</span>
+                <span class="project-tech-tag">Optimization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col project-col" data-categories="education">
+          <div class="glass-panel project-card">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-br"></div>
+            
+            <div class="project-card-image-wrapper">
+              <span class="project-card-overlay">EDTECH</span>
+              <svg viewBox="0 0 400 200" style="background:#040914; width:100%; height:100%;">
+                <defs>
+                  <linearGradient id="gridGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="var(--accent-cyan)" stop-opacity="0.1" />
+                    <stop offset="100%" stop-color="transparent" />
+                  </linearGradient>
+                </defs>
+                <rect x="50" y="40" width="300" height="120" fill="url(#gridGrad)" stroke="rgba(0, 245, 255, 0.2)" />
+                <line x1="100" y1="40" x2="100" y2="160" stroke="rgba(0, 245, 255, 0.1)" />
+                <line x1="200" y1="40" x2="200" y2="160" stroke="rgba(0, 245, 255, 0.1)" />
+                <line x1="300" y1="40" x2="300" y2="160" stroke="rgba(0, 245, 255, 0.1)" />
+                <text x="70" y="80" fill="var(--text-primary)" font-family="sans-serif" font-size="12" font-weight="bold">COGNITIVE LEVEL CHECKER</text>
+                <text x="70" y="110" fill="var(--accent-cyan)" font-family="monospace" font-size="10">USER_STUDENT: COMPLETED</text>
+                <text x="70" y="130" fill="var(--accent-purple)" font-family="monospace" font-size="10">TEACHER_LOG: SYNCED</text>
+              </svg>
+            </div>
+            
+            <div class="project-card-body">
+              <h3 class="project-card-title">Cognitive Level Checker</h3>
+              <p class="text-secondary small flex-grow-1">
+                A responsive Web-based educational assessment tool. Incorporates adaptive difficulty algorithms to evaluate a student's cognitive grasp, providing metrics dashboards for teachers to target concept gaps.
+              </p>
+              <ul class="timeline-highlights p-0 my-3 text-secondary small">
+                <li>Personalized Performance Analytics</li>
+                <li>Dynamic Quiz Render Logic</li>
+              </ul>
+              <div class="project-tech-badges">
+                <span class="project-tech-tag">HTML5</span>
+                <span class="project-tech-tag">CSS3</span>
+                <span class="project-tech-tag">Vanilla JS</span>
+                <span class="project-tech-tag">SQLite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --- ACHIEVEMENTS SECTION --- -->
+  <section id="achievements" class="py-5 my-5">
+    <div class="container">
+      <div class="section-title-wrapper text-start reveal-on-scroll">
+        <span class="section-title-bg">Awards</span>
+        <h2 class="section-title text-neon-cyan">Achievements</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Hackathon & Coding Details -->
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="glass-panel p-4 h-100">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-br"></div>
+            <h3 class="h4 mb-4 text-neon-cyan">// RECOGNITIONS RECORD</h3>
+            
+            <div class="timeline-cyber">
+              <!-- Node 1 -->
+              <div class="timeline-item-cyber">
+                <div class="timeline-node"></div>
+                <div class="timeline-header">
+                  <span class="timeline-date">// 2025</span>
+                  <h4 class="h5 timeline-role text-white">Top 5 Finishers</h4>
+                  <span class="timeline-company">Amaravati Quantum Valley Hackathon 2025</span>
+                </div>
+                <p class="text-secondary small">
+                  Led the team to secure a top 5 spot out of 68 competing engineering teams, successfully deploying a working Quantum Machine Learning Hybrid architecture.
+                </p>
+              </div>
+
+              <!-- Node 2 -->
+              <div class="timeline-item-cyber">
+                <div class="timeline-node"></div>
+                <div class="timeline-header">
+                  <span class="timeline-date">// 2024</span>
+                  <h4 class="h5 timeline-role text-white">BRICS Youth Council Participant</h4>
+                  <span class="timeline-company">BRICS Entrepreneurship Summit</span>
+                </div>
+                <p class="text-secondary small">
+                  Represented youth interest and discussed international digital infrastructure scaling and engineering practices.
+                </p>
+              </div>
+
+              <!-- Node 3 -->
+              <div class="timeline-item-cyber">
+                <div class="timeline-node"></div>
+                <div class="timeline-header">
+                  <span class="timeline-date">// 2024</span>
+                  <h4 class="h5 timeline-role text-white">Team Lead</h4>
+                  <span class="timeline-company">Code Nod Community Hackathon</span>
+                </div>
+                <p class="text-secondary small">
+                  Managed developer workflows and software version pipelines to build and deploy dynamic automation scripts under tight time parameters.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Problems Metrics -->
+        <div class="col-lg-5 reveal-on-scroll">
+          <div class="glass-panel purple-border p-4 h-100 d-flex flex-column justify-content-center">
+            <div class="hud-corner hud-tl purple"></div>
+            <div class="hud-corner hud-br purple"></div>
+            
+            <h3 class="h4 mb-4 text-neon-purple text-center">// ONLINE JUDGE MATRIX</h3>
+            
+            <div class="row g-4 text-center my-auto">
+              <!-- Counter 1 -->
+              <div class="col-6">
+                <div class="glass-panel p-3 param-box">
+                  <span class="counter-value d-block" data-target="150" style="color:var(--accent-purple); text-shadow:0 0 10px rgba(139,92,246,0.4);">0</span>
+                  <span class="counter-label text-neon-purple">GFG Solved</span>
+                </div>
+              </div>
+              
+              <!-- Counter 2 -->
+              <div class="col-6">
+                <div class="glass-panel p-3 param-box">
+                  <span class="counter-value d-block" data-target="50" style="color:var(--accent-pink); text-shadow:0 0 10px rgba(236,72,153,0.4);">0</span>
+                  <span class="counter-label" style="color:var(--accent-pink);">LeetCode</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-5 p-3 text-center rounded" style="background: rgba(0,0,0,0.2); border: 1px solid rgba(139, 92, 246, 0.1);">
+              <span class="dashboard-mono" style="font-size:0.8rem;">
+                TOTAL RESOLVED ISSUES: <span class="text-neon-cyan">> 200+</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- LEADERSHIP SECTION --- -->
+  <section id="leadership" class="py-5 my-5">
+    <div class="container">
+      <div class="section-title-wrapper text-start reveal-on-scroll">
+        <span class="section-title-bg">Impact</span>
+        <h2 class="section-title text-neon-purple">Leadership</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9 reveal-on-scroll">
+          <div class="glass-panel p-4 p-md-5">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-br"></div>
+            
+            <div class="row align-items-center gy-4">
+              <div class="col-md-4 text-center">
+                <div class="display-1 text-neon-purple"><i class="bi bi-people-fill"></i></div>
+                <div class="dashboard-mono mt-2" style="font-size: 0.85rem;">PROJECT_LEAD_AARTHI</div>
+              </div>
+              <div class="col-md-8">
+                <h3 class="h4 text-neon-cyan mb-2">Little Hands Organization</h3>
+                <h4 class="h6 text-secondary mb-3">Project Aarthi Lead</h4>
+                <p class="text-secondary">
+                  Spearheaded strategic women empowerment initiatives, coordinating team efforts to provide skill development opportunities. Managed digital campaign logistics and coordinated volunteers across local communities to expand project reach by 40%.
+                </p>
+                <ul class="timeline-highlights p-0 m-0 text-secondary small">
+                  <li>Community Engagement & Resource Allocations</li>
+                  <li>Project Lifecycles Planning & Execution</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- CERTIFICATIONS SECTION --- -->
+  <section id="certifications" class="py-5 my-5">
+    <div class="container">
+      <div class="section-title-wrapper text-start reveal-on-scroll">
+        <span class="section-title-bg">Credentials</span>
+        <h2 class="section-title text-neon-cyan">Certifications</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Cert 1 -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="glass-panel cert-card">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-br"></div>
+            <div class="cert-icon-box">
+              <i class="bi bi-patch-check-fill"></i>
+            </div>
+            <div>
+              <h4 class="cert-title">PCAP Python Essentials</h4>
+              <span class="cert-org">Cisco Networking Academy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="glass-panel cert-card purple-border">
+            <div class="hud-corner hud-tl purple"></div>
+            <div class="hud-corner hud-br purple"></div>
+            <div class="cert-icon-box">
+              <i class="bi bi-patch-check-fill"></i>
+            </div>
+            <div>
+              <h4 class="cert-title">CLA C Essentials</h4>
+              <span class="cert-org">Cisco Networking Academy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="glass-panel cert-card">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-br"></div>
+            <div class="cert-icon-box">
+              <i class="bi bi-terminal-fill"></i>
+            </div>
+            <div>
+              <h4 class="cert-title">Linux Essentials</h4>
+              <span class="cert-org">Cisco / NDG Linux Group</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- CONTACT SECTION --- -->
+  <section id="contact" class="py-5 my-5">
+    <div class="container">
+      <div class="section-title-wrapper text-start reveal-on-scroll">
+        <span class="section-title-bg">Comms</span>
+        <h2 class="section-title text-neon-purple">Transmit Message</h2>
+      </div>
+
+      <div class="row g-5">
+        <!-- Details Column -->
+        <div class="col-lg-5 reveal-on-scroll">
+          <div class="glass-panel p-4 h-100">
+            <div class="hud-corner hud-tl"></div>
+            <div class="hud-corner hud-br"></div>
+            <h3 class="h4 mb-4 text-neon-cyan">// COMM CHANNEL DETAILS</h3>
+            
+            <p class="text-secondary mb-4">
+              Feel free to initiate a communication transmission. Whether you want to discuss Quantum Computing, RPA development workflows, or job opportunities, my channels are open.
+            </p>
+
+            <div class="d-flex align-items-center mb-4">
+              <div class="cert-icon-box me-3" style="width:45px; height:45px; font-size:1.2rem;">
+                <i class="bi bi-envelope-at-fill"></i>
+              </div>
+              <div>
+                <span class="dashboard-mono d-block" style="font-size:0.75rem;">EMAIL_ADDRESS</span>
+                <a href="mailto:sai.niharika.dasari.work@gmail.com" class="text-white text-decoration-none">sai.niharika.dasari.work@gmail.com</a>
+              </div>
+            </div>
+
+            <hr style="border-color: rgba(255, 255, 255, 0.1);">
+
+            <h4 class="h6 mb-3 text-neon-purple">// SOCIALS_NETWORKS</h4>
+            <div class="d-flex gap-3">
+              <a href="https://linkedin.com/in/niharika-dasari-975924294" target="_blank" class="cert-icon-box" style="width:45px; height:45px; font-size:1.2rem; text-decoration:none;">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/DasariNagaSaiNiharika" target="_blank" class="cert-icon-box" style="width:45px; height:45px; font-size:1.2rem; text-decoration:none;">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="glass-panel contact-form-console">
+            <div class="console-header-bar">
+              <div class="console-dots">
+                <span class="console-dot red"></span>
+                <span class="console-dot yellow"></span>
+                <span class="console-dot green"></span>
+              </div>
+              <span>TERMINAL // COMMS_UPLOADER</span>
+              <span>v1.0.4</span>
+            </div>
+            
+            <div class="console-body">
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="formName" class="dashboard-mono small mb-1">USER_NAME:</label>
+                    <input type="text" class="form-control form-control-cyber" id="formName" placeholder="Enter name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="formEmail" class="dashboard-mono small mb-1">USER_EMAIL:</label>
+                    <input type="email" class="form-control form-control-cyber" id="formEmail" placeholder="Enter email" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="formSubject" class="dashboard-mono small mb-1">MESSAGE_SUBJECT:</label>
+                    <input type="text" class="form-control form-control-cyber" id="formSubject" placeholder="Enter subject" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="formMessage" class="dashboard-mono small mb-1">MESSAGE_PAYLOAD:</label>
+                    <textarea class="form-control form-control-cyber" id="formMessage" rows="4" placeholder="Enter your transmission payload..." required></textarea>
+                  </div>
+                  <div class="col-12 text-end">
+                    <button type="submit" class="btn btn-cyber btn-cyber-primary w-100">
+                      Transmit Data Package <i class="bi bi-send-fill ms-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Diagnostic Console Output -->
+              <div class="mt-4">
+                <span class="dashboard-mono small d-block mb-1">// SYSTEM_DIAGNOSTIC_LOGGER:</span>
+                <div class="console-log" id="consoleLog">
+                  [SYS]: Transceiver initialized.<br>
+                  [SYS]: Awaiting user input parameters...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- FOOTER --- -->
+  <footer class="footer-cyber text-center text-secondary">
+    <div class="container">
+      <div class="mb-3">
+        <a href="#about" class="footer-link">// ABOUT</a>
+        <a href="#skills" class="footer-link">// SKILLS</a>
+        <a href="#projects" class="footer-link">// PROJECTS</a>
+        <a href="#contact" class="footer-link">// CONTACT</a>
+      </div>
+      <p class="mb-1">
+        &copy; 2026 Dasari Naga Sai Niharika. All rights reserved.
+      </p>
+      <p class="small text-muted" style="font-size: 0.75rem;">
+        SYSTEM ENGINE: v2.4.9-RELEASE // QUANTUM_GRID_ACTIVE
+      </p>
+    </div>
+  </footer>
+
+  <!-- --- BACK TO TOP BUTTON --- -->
+  <div class="back-to-top" id="backToTopBtn" title="Return to Top node">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+
+  <!-- Bootstrap Bundle JS (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Application Script -->
+  <script src="script.js"></script>
+</body>
+</html>
